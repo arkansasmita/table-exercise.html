@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Daftar Buku</title>
+</head>
+<body>
+    <h1>Daftar Koleksi Buku Perpustakaan</h1>
+    <h2>Koleksi Buku Saat Ini</h2>
+    <table>
+        <tr>
+            <th>No.</th>
+            <th>Judul Buku</th>
+            <th>Penulis</th>
+            <th>Tahun Terbit</th>
+            <th>Jumlah Halaman</th>
+            <th>Genre</th>
+        </tr>
+        <tr>
+            <td>1.</td>
+            <td>Filosofi Teras</td>
+            <td>Henry Manampiring</td>
+            <td>2018</td>
+            <td>346</td>
+            <td>Filosofi</td>
+        </tr>
+        <tr>
+            <td>2.</td>
+            <td>Atomic Habits</td>
+            <td>James Clear</td>
+            <td>2018</td>
+            <td>320</td>
+            <td>Pengembangan Diri</td>
+        </tr>
+        <tr>
+            <td>3.</td>
+            <td>Kitab Kawin</td>
+            <td>Laila Akhmad</td>
+            <td>2018</td>
+            <td>207</td>
+            <td>Horor</td>
+        </tr>
+    </table>
+    <h2>Tambah Buku Baru</h2>
+    <form>
+        <table>
+            <tr>
+                <td><label for="judul">Judul Buku:</label></td>
+                <td><input type="text" id="judul" name="judul" placeholder="Masukkan judul buku"></td>
+            </tr>
+            <tr>
+                <td><label for="penulis">Penulis:</label></td>
+                <td><input type="text" id="penulis" name="penulis" placeholder="Masukkan nama penulis"></td>
+            </tr>
+            <tr>
+                <td><label for="tahun">Tahun Terbit:</label></td>
+                <td><input type="text" id="tahun" name="tahun" placeholder="eg:2023"></td>
+            </tr>
+            <tr>
+                <td><label for="halaman">Jumlah Halaman:</label></td>
+                <td><input type="text" id="halaman" name="halaman" placeholder="eg:300"></td>
+            </tr>
+            <tr>
+                <td><label for="genre">Genre:</label></td>
+                <td>
+                    <select id="genre" name="genre">
+                        <option value="">Pilih Genre</option>
+                        <option value="Filosofi">Filosofi</option>
+                        <option value="Pengembangan Diri">Pengembangan Diri</option>
+                        <option value="Horor">Horor</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" value="Tambahkan Buku"></td>
+            </tr>
+        </table>
+    </form>
+    <h3>Syarat Penulisan pada Formulir:</h3>
+    <ul>
+        <li><b>Judul Buku:</b> Harus diisi. Maksimal 100 karakter.</li>
+        <li><b>Penulis:</b> Harus diisi. Nama lengkap penulis. Maksimal 70 karakter.</li>
+        <li><b>Tahun Terbit:</b> Harus diisi. Berupa angka tahun (eg:2023). Minimal tahun 1000, maksimal tahun saat ini 2025.</li>
+        <li><b>Jumlah Halaman:</b> Harus diisi. Berupa angka jumlah halaman. Minimal 1 halaman.</li>
+        <li><b>Genre:</b> Harus dipilih dari daftar yang tersedia.</li>
+    </ul>
+</body>
+</html>
